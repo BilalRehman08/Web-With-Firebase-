@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+    <button type="button" class="btn btn-primary">Register</button>
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBDkQxw-sLrEi-dBl7l73MXgFC112OE7z8",
+            authDomain: "web-authentication-f59ce.firebaseapp.com",
+            projectId: "web-authentication-f59ce",
+            storageBucket: "web-authentication-f59ce.appspot.com",
+            messagingSenderId: "928990619980",
+            appId: "1:928990619980:web:654c95650c58b1d65987e9"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</html>
